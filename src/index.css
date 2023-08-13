@@ -1,0 +1,35 @@
+/* Import the League Spartan font from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+
+/* Set up Tailwind CSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Define the base styles in the base layer */
+@layer base {
+  .mainWrapper {
+    /* Common styles */
+    font-size: 15px;
+    font-family: "League Spartan", sans-serif;
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* Background images for mobile view */
+    background-image: url("../bg-pattern-top-mobile.svg"),
+      url("../bg-pattern-bottom-mobile.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: top left, bottom right;
+
+    /* Media query for desktop view */
+    @media (min-width: 1024px) {
+      /* Update background images for desktop view */
+      background-image: url("../bg-pattern-top-desktop.svg"),
+        url("../bg-pattern-bottom-desktop.svg");
+    }
+  }
+}
