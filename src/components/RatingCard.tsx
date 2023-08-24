@@ -22,7 +22,7 @@ const RatingCard = (props: IRatingCardPops) => {
           />
         ))}
       </div>
-      <p className="px-4 font-bold text-very-dark-magenta">
+      <p className="px-4 text-base font-bold text-very-dark-magenta">
         Rated 5 Stars in {name}
       </p>
     </div>

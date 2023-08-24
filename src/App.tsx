@@ -30,7 +30,7 @@ const App = () => {
     <article className="flex flex-col items-center justify-center px-6 py-8 lg:px-44 lg:py-28">
       <section className="flex w-[100%] flex-col lg:mb-8 lg:flex-row">
         <section className="flex w-[100%] flex-col lg:flex-1">
-          <h1 className="py-2 text-center text-4xl font-bold text-very-dark-magenta lg:max-w-[66.66%] lg:text-left lg:text-6xl">
+          <h1 className="py-2 text-center text-4xl font-bold text-very-dark-magenta lg:max-w-[66.66%] lg:text-left lg:text-[55px] lg:leading-[1] ">
             10,000+ of our users love our products.
           </h1>
           <p className="py-2 text-center font-medium text-dark-grayish-magenta lg:max-w-[80%] lg:text-left lg:text-lg ">
