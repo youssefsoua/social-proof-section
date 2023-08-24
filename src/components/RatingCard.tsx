@@ -8,7 +8,7 @@ const RatingCard = (props: IRatingCardPops) => {
 
   return (
     <div
-      className={`mb-4 flex w-[100%] flex-col items-center justify-center rounded-lg bg-light-grayish-magenta px-8 py-2 lg:w-[75%] lg:flex-row lg:justify-start ${
+      className={`mb-4 flex w-[100%] flex-col items-center justify-center rounded-lg bg-light-grayish-magenta px-8 py-3 lg:w-[80%] lg:flex-row lg:justify-start ${
         index === 0 ? "xl:mr-24" : index === 1 ? "xl:mr-12" : ""
       }`}
     >

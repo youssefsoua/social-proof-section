@@ -27,31 +27,31 @@ const reviewersList: ICommentCardPops[] = [
 ];
 const App = () => {
   return (
-    <div className="flex flex-col items-center justify-center px-6 py-8 lg:px-32">
-      <div className="flex w-[100%] flex-col lg:mb-8 lg:flex-row">
-        <div className="flex w-[100%] flex-col lg:flex-1">
-          <h1 className="py-2 text-center text-4xl font-bold text-very-dark-magenta lg:text-left lg:text-6xl">
+    <article className="flex flex-col items-center justify-center px-6 py-8 lg:px-44 lg:py-28">
+      <section className="flex w-[100%] flex-col lg:mb-8 lg:flex-row">
+        <section className="flex w-[100%] flex-col lg:flex-1">
+          <h1 className="py-2 text-center text-4xl font-bold text-very-dark-magenta lg:max-w-[66.66%] lg:text-left lg:text-5xl">
             10,000+ of our users love our products.
           </h1>
-          <p className="py-2 text-center text-dark-grayish-magenta lg:text-left lg:text-lg">
+          <p className="py-2 text-center text-dark-grayish-magenta lg:max-w-[80%] lg:text-left lg:text-lg ">
             We only provide great products combined with excellent customer
             service. See what our satisfied customers are saying about our
             services.
           </p>
-        </div>
+        </section>
 
-        <div className="flex w-[100%] flex-1 flex-col py-8 lg:items-end ">
+        <section className="flex w-[100%] flex-1 flex-col py-8 lg:items-end ">
           {reviewersSources.map((e, index) => (
             <RatingCard name={e} key={e} index={index} />
           ))}
-        </div>
-      </div>
-      <div className="flex w-[100%] flex-col lg:flex-row lg:justify-between">
+        </section>
+      </section>
+      <section className="flex w-[100%] flex-col lg:flex-row lg:justify-between">
         {reviewersList.map((e, index) => (
           <CommentCard {...e} key={e.name} index={index} />
         ))}
-      </div>
-    </div>
+      </section>
+    </article>
   );
 };
 
