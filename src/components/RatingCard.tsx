@@ -12,7 +12,7 @@ const RatingCard = (props: IRatingCardPops) => {
         index === 0 ? "xl:mr-24" : index === 1 ? "xl:mr-12" : ""
       }`}
     >
-      <div className="flex w-36 flex-row justify-between p-2">
+      <div className="flex w-32 flex-row justify-between p-2">
         {Array.from({ length: 5 }, (_, index) => (
           <img
             src="./icon-star.svg"
